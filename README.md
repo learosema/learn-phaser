@@ -15,6 +15,10 @@ Ancient browsers like Internet Explorer are not supported.
  * [first-game](first-game/) by [Phaser first game tutorial](http://phaser.io/tutorials/making-your-first-phaser-3-game/part1)
  * [infinite map](infinite-map/) by Jared York ([article](https://yorkcs.com/2019/02/25/top-down-infinite-terrain-generation-with-phaser-3/))
 
+## Lea's own projects
+
+* [PONG](pong/) (WIP)
+
 ## Hints
 
 ### Better Autocomplete
