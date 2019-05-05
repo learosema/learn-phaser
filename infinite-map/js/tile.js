@@ -1,3 +1,5 @@
+/// <reference path="../../lib/phaser.d.ts" />
+
 class Tile extends Phaser.GameObjects.Sprite {
   constructor(scene, x, y, key) {
       super(scene, x, y, key);

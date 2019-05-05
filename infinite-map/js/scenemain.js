@@ -1,3 +1,5 @@
+/// <reference path="../../lib/phaser.d.ts" />
+
 class SceneMain extends Phaser.Scene {
   constructor() {
     super({ key: 'SceneMain' });

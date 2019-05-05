@@ -1,3 +1,5 @@
+/// <reference path="../../lib/phaser.d.ts" />
+
 class Chunk {
   constructor(scene, x, y) {
     this.scene = scene;

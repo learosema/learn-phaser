@@ -1,3 +1,5 @@
+/// <reference path="../lib/phaser.d.ts" />
+
 let player;
 let platforms;
 let stars;
