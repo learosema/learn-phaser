@@ -3,7 +3,7 @@
 
 I'm just working through tutorials and making some notes.
 
-USAGE: just `npm start` to start a [local webserver](http://localhost:8000/). 
+USAGE: just `npm start` to start a [local webserver](http://localhost:8000/) using the built-in PHP server.  
 Alternatively, this repo is also pushed as a [github page](https://terabaud.github.io/learn-phaser/).
 
 For simplicity, this repo uses no bundling nor transpilers while using modern JavaScript ES6+.
@@ -19,13 +19,11 @@ Ancient browsers like Internet Explorer are not supported.
 
 ### Better Autocomplete
 
-For a better AutoComplete experience, you can use the type 
-definitions from https://github.com/photonstorm/phaser3-docs/tree/master/typescript.
-
-If your project uses plain JavaScript (like here), you can still use the 
-type definitions by referencing them in your JavaScript file:
+For a better AutoComplete experience, you can use the type definitions
+from the [phaser3-docs](https://github.com/photonstorm/phaser3-docs/tree/master/typescript) repository. 
+If your project uses plain JavaScript (like here), you can still use type definitions by referencing them in your JavaScript file like this:
 
 `/// <reference path="lib/phaser.d.ts" />`
 
 This is a feature of [TypeScript](https://www.typescriptlang.org/docs/handbook/triple-slash-directives.html).
-Visual Studio and Visual Studio Code support triple-slash-reference directives out-of-the box.
+Visual Studio Code (and Visual Studio) support triple-slash reference directives out-of-the box.
