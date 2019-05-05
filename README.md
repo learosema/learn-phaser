@@ -23,12 +23,9 @@ For a better AutoComplete experience, you can use the type
 definitions from https://github.com/photonstorm/phaser3-docs/tree/master/typescript.
 
 If your project uses plain JavaScript (like here), you can still use the 
-type definitions by referencing them in your JavaScript file. 
-
-This is a feature of TypeScript (see: https://www.typescriptlang.org/docs/handbook/triple-slash-directives.html)
-Visual Studio and Visual Studio Code support this out-of-the box.
+type definitions by referencing them in your JavaScript file:
 
 `/// <reference path="lib/phaser.d.ts" />`
 
-
-
+This is a feature of [TypeScript](https://www.typescriptlang.org/docs/handbook/triple-slash-directives.html).
+Visual Studio and Visual Studio Code support triple-slash-reference directives out-of-the box.
