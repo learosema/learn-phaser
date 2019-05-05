@@ -11,7 +11,6 @@ let gameOver = false;
 
 const config = {
   type: Phaser.AUTO,
-  parent: 'phaser-example',
   mode: Phaser.Scale.FIT,
   autoCenter: Phaser.Scale.CENTER_BOTH,
   width: 800,
