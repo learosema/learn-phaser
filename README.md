@@ -1,4 +1,4 @@
 
 # Learning phaser.
 
- * [infinite map](/infinite-map)
+ * [infinite map](infinite-map)
