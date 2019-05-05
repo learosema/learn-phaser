@@ -1,13 +1,34 @@
 
 # Learning phaser using Phaser 3
 
-I'm just working through tutorials.
+I'm just working through tutorials and making some notes.
 
 USAGE: just `npm start` to start a [local webserver](http://localhost:8000/). 
-Alternatively, this repo is also pushed as a [github page](https://terabaud.github.io/learn-phaser/)
+Alternatively, this repo is also pushed as a [github page](https://terabaud.github.io/learn-phaser/).
+
+For simplicity, this repo uses no bundling nor transpilers while using modern JavaScript ES6+.
+Ancient browsers like Internet Explorer are not supported.
+
+## Tutorials
 
  * [hello-phaser](hello-phaser/) by [Phaser official documentation](https://phaser.io/tutorials/getting-started-phaser3/part5)
  * [first-game](first-game/) by [Phaser first game tutorial](http://phaser.io/tutorials/making-your-first-phaser-3-game/part1)
  * [infinite map](infinite-map/) by Jared York ([article](https://yorkcs.com/2019/02/25/top-down-infinite-terrain-generation-with-phaser-3/))
+
+## Hints
+
+### Better Autocomplete
+
+For a better AutoComplete experience, you can use the type 
+definitions from https://github.com/photonstorm/phaser3-docs/tree/master/typescript.
+
+If your project uses plain JavaScript (like here), you can still use the 
+type definitions by referencing them in your JavaScript file. 
+
+This is a feature of TypeScript (see: https://www.typescriptlang.org/docs/handbook/triple-slash-directives.html)
+Visual Studio and Visual Studio Code support this out-of-the box.
+
+`/// <reference path="lib/phaser.d.ts" />`
+
 
 
