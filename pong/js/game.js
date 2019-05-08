@@ -19,7 +19,7 @@ class PongScene extends Phaser.Scene {
     // this.physics.setBounce(1, 1);
     this.physics.world.setBounds(0, 0, 800, 600, true, true, true, true);
     // this.physics.setBounds(1, 1);
-    this.playerOne = this.add.rectangle(
+    const playerOne = this.add.rectangle(
       50,
       y1,
       panelWidth,
@@ -27,7 +27,9 @@ class PongScene extends Phaser.Scene {
       0xff00ff,
       1.0
     );
-    this.playerTwo = this.add.rectangle(
+    this.playerOne = this.physics.add.existing(playerOne);
+
+    const playerTwo = this.add.rectangle(
       width - 50,
       y2,
       panelWidth,
@@ -35,6 +37,8 @@ class PongScene extends Phaser.Scene {
       0x00ff00,
       1.0
     );
+    this.playerTwo = this.physics.add.existing(playerTwo);
+
     const ball = this.add.ellipse(
       (width - ballRadius) / 2,
       (height - ballRadius) / 2,
@@ -45,10 +49,16 @@ class PongScene extends Phaser.Scene {
     );
     this.ball = this.physics.add.existing(ball);
     // todo: how to add physics to game objects?
-    // this.physics.arcade.enable(this.ball);
-    this.ball.body.setVelocity(100, 1);
+    this.ball.body.setVelocity(200, 200);
     this.ball.body.setBounce(1);
     this.ball.body.setCollideWorldBounds(true);
+
+    this.playerOne.body.setImmovable(true);
+    this.playerTwo.body.setImmovable(true);
+    this.physics.add.collider(ball, playerOne);
+    this.physics.add.collider(ball, playerTwo);
+    // this.ball.body.collideWith(this.playerOne);
+    // this.ball.body.collideWith(this.playerTwo);
     // this.ballPhysics.setBounce(1, 1);
   }
 }
@@ -61,7 +71,7 @@ const game = new Phaser.Game({
   physics: {
     default: 'arcade',
     arcade: {
-      gravity: { y: 100 },
+      gravity: { y: 0 },
       debug: true
     }
   },
